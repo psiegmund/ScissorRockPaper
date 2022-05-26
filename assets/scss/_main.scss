@@ -1,0 +1,83 @@
+main {}
+
+#container {
+    @include flexit;
+    flex-direction: column;
+    background-color: rgb(0, 97, 121);
+    height: 100vh;
+}
+
+#roundsContainer {
+    padding: 10px;
+    border-radius: 10px;
+    visibility: visible;
+
+    p {
+        font-size: 3rem;
+    }
+
+    form {
+        display: grid;
+        font-size: 2rem;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        align-items: center;
+        justify-content: space-around;
+
+        label {
+            text-align: right;
+            padding: 10px;
+        }
+    }
+}
+
+#letsPlay,
+#userVsKiText,
+#roundsCounterText {
+    font-size: 4rem;
+    text-align: center;
+}
+
+#choice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    gap: 10%;
+
+    img {
+        width: 20%;
+    }
+
+    img:hover {
+        filter: brightness(1.5);
+        transform: scale(1.5);
+        cursor: pointer;
+    }
+}
+
+#text {
+    @include flexit;
+    flex-direction: column;
+}
+
+#makeChoiceOutput {
+    visibility: hidden;
+    font-size: 2rem;
+}
+
+#roundResultOutput {
+    visibility: hidden;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#matchResultOutput {
+    font-size: 2rem;
+}
+
+#restartContainer {
+    margin: 5%;
+    font-size: 3rem;
+    cursor: pointer;
+}

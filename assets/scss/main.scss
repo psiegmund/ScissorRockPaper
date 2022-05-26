@@ -1,0 +1,9 @@
+@import "_variables.scss";
+@import "_generals.scss";
+@import "_mixin.scss";
+@import "_header.scss";
+@import "_main.scss";
+@import "_footer.scss";
+@import "_mediaQueries.scss";
+
+// sass --watch assets/scss/main.scss assets/css/style.css

@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    max-width: 576px;
+    height: 100vh;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}

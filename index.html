@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schere, Stein, Papier! Die ultimative Entscheidungshilfe!</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+    </header>
+
+    <main>
+        <div id="container">
+            <div id="roundsContainer">
+                <p>how many rounds?</p>
+                <form action="">
+                    <label for="rounds5">5</label>
+                    <input type="radio" name="rounds" value="5" id="rounds5" checked="checked">
+                    <label for="rounds10">10</label>
+                    <input type="radio" name="rounds" value="10" id="rounds10">
+                    <label for="rounds15">15</label>
+                    <input type="radio" name="rounds" value="15" id="rounds15">
+                    <label for="rounds20">20</label>
+                    <input type="radio" name="rounds" value="20" id="rounds20">
+                </form>
+            </div>
+            <div id="roundsCounter">
+                <p id="roundsCounterText"></p>
+                <p id="userVsKiText"></p>
+            </div>
+            <div>
+                <p id="resultsCounter"></p>
+            </div>
+            <div id="text">
+                <div id="letsPlay" onclick="start()">lets Play</div>
+                <div id="makeChoiceOutput">Choose wisely!</div>
+                <div id="roundResultOutput"></div>
+                <div id="matchResultOutput"></div>
+            </div>
+            <div id="choice">
+                <img src="assets/img/scissors300.png" alt="scissors" id="btnScissors">
+                <img src="assets/img/paper300.png" alt="paper" id="btnPaper">
+                <img src="assets/img/rock300.png" alt="rock" id="btnRock">
+            </div>
+            <div id="restartContainer">
+                <p id="restart" onclick="window.location.reload()">
+                    restart
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
