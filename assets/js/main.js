@@ -69,7 +69,8 @@ let chkGameStatus = () => {
     }
     else if (roundsPlayed == roundsTotal) {
         roundsCounterOutput.innerHTML = `Runde ${roundsPlayed} von ${roundsTotal}`;
-        stopPicsClickable()
+        stopPicsClickable();
+
         // Ausgabe Gesamtergebnis
         if
             (resultKI == resultPlayer) {
@@ -87,9 +88,6 @@ let chkGameStatus = () => {
 // ================================
 let refreshScore = () => {
     matchResultOutput.innerHTML = `Player ${resultPlayer} / ${resultKI} KI`;
-    // if (roundsPlayed > 0) {
-    //     makeChoiceOutput.style.visibility = 'hidden';
-    // }
 }
 
 // ================================
@@ -169,7 +167,7 @@ let setKI = () => {
 }
 
 // ================================
-// Startet die aktuelle Spielrunde, legt Wert für User und KI fest
+// Startet die nächste Spielrunde, legt Wert für User und KI fest
 // ================================
 let startGame = (choice) => {
     setKI();
@@ -179,7 +177,7 @@ let startGame = (choice) => {
 }
 
 // ================================
-// Hauptfunktion für den Gesamtablauf
+// Startet das Spiel
 // ================================
 let start = () => {
     console.log('Game started');
